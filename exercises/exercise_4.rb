@@ -26,6 +26,7 @@ store6 = Store.create(name: "Yaletown", annual_revenue: 430000, mens_apparel: tr
 @mens_stores.each do |store| 
   puts "Store Name: #{store.name} | Annual Revenue: #{store.annual_revenue}"
 end
+
 #! 4. Do another fetch but this time load stores that carry women's apparel and are generating less than $1M in annual revenue.
 
 @womens_stores = Store.where(womens_apparel: true)
